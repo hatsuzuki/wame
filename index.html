@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport">
+
+  <title>wa.me</title>
+
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="icon" type="image/png" href="icon.png" />
+
+  <link rel="stylesheet" href="lib/material/css/material.min.css" />
+
+  <style type="text/css">
+
+    /* customise border colour on active textbox */
+    .form-control:hover, .form-control:focus
+    {
+      border-color: rgb(83, 207, 0) !important;
+      box-shadow: inset 0 -2px 0 -1px rgb(83, 207, 0) !important;
+    }
+
+    /* customise placeholder colour */
+    ::placeholder
+    {
+      color: #666 !important;
+      opacity: 1;
+    }
+  </style>
+
+</head>
+
+<body class="bg-dark">
+
+  <div class="container">
+
+    <!-- top separator -->
+    <div class="d-block mt-5" style="height:40%">&nbsp;</div>
+
+    <!-- title -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <h2 class="text-white">wa.me</h2>
+        <h6 class="text-white-hint">chat with unknown numbers</h6>
+      </div>
+    </div>
+
+    <form id="form" autocomplete="off">
+      <!-- country code and telephone number -->
+      <div class="row mt-5 p-3">
+        <div class="col-4 col-lg-2">
+          <input id="countryCode" type="tel" class="form-control form-control-lg text-light text-center" value="+65" />
+        </div>
+        <div class="col-8 col-lg-10">
+          <input id="telephone" type="tel" class="form-control form-control-lg text-light" placeholder="91234567" />
+        </div>
+      </div>
+
+      <!-- submit button -->
+      <div class="row mt-2 p-3">
+        <div class="col">
+          <button id="submit" type="submit" class="btn btn-success btn-lg btn-block p-3">Start Chat</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <script type="text/javascript" src="lib/jquery/jquery-3.6.0.slim.min.js"></script>
+  <script type="text/javascript" src="lib/material/js/material.min.js"></script>
+  <script type="text/javascript" src="lib/script.js"></script>
+
+</body>
+
+</html>
